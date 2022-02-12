@@ -9,9 +9,14 @@ function App() {
   return (
     <>
       <Header />
-      <section id="secion1" className="section1-bg pb-4 pt-4">
-        <div className="container text-center mb-4 pb-4">
-          <div className="row" style={{ alignItems: "center" }}>
+      <section id="secion1" className="section1-bg ">
+        <div className=" text-center">
+          <div
+            className="row"
+            style={{
+              alignItems: "center",
+            }}
+          >
             <div className="col-md-6">
               <h1
                 style={{
@@ -23,14 +28,17 @@ function App() {
                 Avenride : Book Car, boat, Ambulance and Delivery
               </h1>
               <Link to={"/applynow"}>
-                <button id="apply-now">Apply Now</button>
+                <button id="apply-now" className="mt-10 bg-white text-black">
+                  Apply Now
+                </button>
               </Link>
             </div>
-            <div className="col-md-6">
+            <div className="col-6 " style={{ width: "50vw" }}>
               <img
                 src={`${process.env.PUBLIC_URL}/images/banner.jpeg`}
                 alt=""
-                className="img-fluid imganimate"
+                className=""
+                style={{ height: "82vh", objectFit: "fill" }}
               />
             </div>
           </div>
@@ -39,7 +47,7 @@ function App() {
           <a
             target="_"
             href="https://play.google.com/store/apps/details?id=com.bitcc.revapp"
-            className=" mb-4"
+            className="mb-4 "
           >
             <img src={`${process.env.PUBLIC_URL}/images/android.png`} alt="" />
           </a>
@@ -208,7 +216,6 @@ function App() {
 
       <section>
         <Cycle />
-        <Info />
         <Info />
       </section>
 
