@@ -2,6 +2,8 @@ import "./App.css";
 import React from "react";
 import Header from "./Components/Navbar";
 import { Link } from "react-router-dom";
+import Cycle from "./Components/sections/Cycle";
+import Info from "./Components/sections/Info";
 
 function App() {
   return (
@@ -112,6 +114,104 @@ function App() {
 
       {/* code by shoaib badshah */}
 
+      {/* See why thousands of people ride with Deliveroo */}
+
+      <section className="bg-gray-100 pb-10">
+        <h1 className="text-center text-5xl font-bold pt-24 mb-24 ">
+          See why thousands of people
+          <br /> use AvenRide
+        </h1>
+        <div className="flex justify-center pb-24">
+          <div className="flex-row z-10 ">
+            <div className="w-80 p-3 bg-white h-64 rounded-xl -mr-8">
+              <div className="flex justify-between ">
+                <h1 className="font-bold text-lg">
+                  Flexible working
+                  <br /> Environment
+                </h1>
+                <h1 className="mt-2">⭐⭐⭐⭐⭐</h1>
+              </div>
+              <p className="mt-2">Delivery rider</p>
+              <p className="text-sm mt-3">
+                AvenRide allows you to be flexible in your work and offers great
+                benefits to the riders including great deals on high street
+                shops. I learned how to work independently, cycling for many
+                hours at a time on my own...☆ ✦ ✡
+              </p>
+            </div>
+
+            {/* second card of left image */}
+            <div className="w-80 p-3 bg-white h-48 rounded-xl mt-16 -mr-8 -ml-24 z-10">
+              <div className="flex justify-between ">
+                <h1 className="font-bold text-lg">Very easy going job</h1>
+                <h1 className="mt-2">⭐⭐⭐⭐⭐</h1>
+              </div>
+              <p className="mt-2">AvenRide Delivery</p>
+              <p className="text-sm mt-3">
+                Stress free work, constantly moving around, self employment
+                freedom. Your choice when it comes to hours working, flexible,
+                can take holidays whenever you like.
+              </p>
+            </div>
+          </div>
+
+          <div className="col-md-6 w-72 mr-10 -mt-10">
+            <img
+              src={`${process.env.PUBLIC_URL}/images/avenall.jpeg`}
+              alt=""
+              className="img-fluid "
+            />
+          </div>
+
+          <div className="col-md-6 w-72 ml-10 -mt-10">
+            <img
+              src={`${process.env.PUBLIC_URL}/images/fronteven.jpeg`}
+              alt=""
+              className="img-fluid "
+            />
+          </div>
+
+          <div className="flex-row">
+            <div className="w-80 p-3 bg-white h-64 rounded-xl mb-16 -ml-8 z-10">
+              <div className="flex justify-between ">
+                <h1 className="font-bold text-lg">
+                  Flexible working
+                  <br /> Environment
+                </h1>
+                <h1 className="mt-2">⭐⭐⭐⭐⭐</h1>
+              </div>
+              <p className="mt-2">Delivery rider</p>
+              <p className="text-sm mt-3">
+                AvenRide allows you to be flexible in your work and offers great
+                benefits to the riders including great deals on high street
+                shops. I learned how to work independently, cycling for many
+                hours at a time on my own...☆ ✦ ✡
+              </p>
+            </div>
+
+            {/* second card of right image */}
+            <div className="w-80 px-3 py-3 bg-white h-48 rounded-xl ml-16 z-10">
+              <div className="flex justify-between ">
+                <h1 className="font-bold text-lg">Honest review</h1>
+                <h1 className="mt-2">⭐⭐⭐⭐⭐</h1>
+              </div>
+              <p className="mt-2">AvenRide Delivery</p>
+              <p className="text-sm mt-3">
+                It has allowed me to keep fit as well as earn money and the way
+                the system works on a fee per delivery basis, there is a
+                potential to make some really good money.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <Cycle />
+        <Info />
+        <Info />
+      </section>
+
       <section id="section3" className="section1-bg pb-4 pt-4">
         <div className="container text-center">
           <div className="row" style={{ alignItems: "center" }}>
@@ -136,6 +236,7 @@ function App() {
           </div>
         </div>
       </section>
+
       <section id="section4">
         <div className="accordion">
           <h3>Frequently Asked Questions</h3>
