@@ -10,14 +10,14 @@ function App() {
     <>
       <Header />
       <section id="secion1" className="section1-bg ">
-        <div className=" text-center">
+        <div className="text-center">
           <div
             className="row"
             style={{
               alignItems: "center",
             }}
           >
-            <div className="col-md-6">
+            <div className="col-6">
               <h1
                 style={{
                   fontWeight: "bolder",

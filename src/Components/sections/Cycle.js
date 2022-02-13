@@ -11,7 +11,7 @@ function Cycle() {
         />
 
         <div className="col-6 absolute top-1/3 left-44 z-10 ">
-          <h1 className="text-4xl font-bold mb-4 text-white">
+          <h1 className="text-4xl font-bold text-white">
             We're always here
             <br /> for you
           </h1>
