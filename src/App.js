@@ -4,6 +4,8 @@ import Header from "./Components/Navbar";
 import { Link } from "react-router-dom";
 import Cycle from "./Components/sections/Cycle";
 import Info from "./Components/sections/Info";
+import ImageSlider from "./Components/Carousel/ImageSlider";
+import { SliderData } from "./Components/Carousel/SliderData";
 
 function App() {
   return (
@@ -217,6 +219,7 @@ function App() {
       <section>
         <Cycle />
         <Info />
+        <ImageSlider slides={SliderData} />;
       </section>
 
       <section id="section3" className="section1-bg pb-4 pt-4">
