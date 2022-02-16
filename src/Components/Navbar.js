@@ -18,6 +18,7 @@ const Header = ({ history }) => {
       expand="lg"
       variant="light"
       className="section1-bg"
+      sticky="top"
     >
       <Container>
         <Navbar.Brand>
@@ -25,7 +26,7 @@ const Header = ({ history }) => {
             <img
               src={`${process.env.PUBLIC_URL}/images/aven.png`}
               className="img-fluid"
-              style={{ width: "100px" }}
+              style={{ width: "60px", height: "40px", objectFit: "cover" }}
               alt=""
             />
           </Link>
