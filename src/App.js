@@ -19,29 +19,28 @@ function App() {
               alignItems: "center",
             }}
           >
-            <div className="col-6">
-              <h1
-                style={{
-                  fontWeight: "bolder",
-                  fontSize: "58px",
-                  color: "white",
-                }}
-              >
-                Avenride : Book Car, boat, Ambulance and Delivery
-              </h1>
-              <Link to={"/applynow"}>
-                <button id="apply-now" className="mt-10 bg-white text-black">
-                  Apply Now
-                </button>
-              </Link>
-            </div>
-            <div className="col-6 " style={{ width: "50vw" }}>
+            <div className="relative">
               <img
-                src={`${process.env.PUBLIC_URL}/images/banner.jpeg`}
+                src={`${process.env.PUBLIC_URL}/images/frontImage.jpg`}
                 alt=""
-                className=""
-                style={{ height: "82vh", objectFit: "fill" }}
+                className="h-screen w-screen object-cover"
               />
+              <div
+                className="absolute top-1/2 w-1/2"
+                style={{ marginLeft: "25%" }}
+              >
+                <h1 className="font-bold text-6xl text-yellow-500">
+                  Avenride : Book Car, boat, Ambulance and Delivery
+                </h1>
+                <Link to={"/applynow"}>
+                  <button
+                    id="apply-now"
+                    className="mt-10 bg-yellow-500 text-black"
+                  >
+                    Apply Now
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
 
